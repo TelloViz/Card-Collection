@@ -8,9 +8,13 @@ categories: progress-report
 ![Static Badge](https://img.shields.io/badge/Current_Phase-Communication-red?style=for-the-badge)
 **Date:** September 5, 2024
 
-## Developers:
-- **Josh Lollis**
-- **Christian Ramirez**
+## Team Members
+
+| Name             | Role      | GitHub
+|------------------|-----------|--------
+| Batu Demirtas    | Developer | [batucs](https://github.com/batucs)
+| Christian Ramirez| Developer | [CRam-irez](https://github.com/CRam-irez)
+| Josh Lollis      | Developer | [TelloViz](https://github.com/TelloViz)
 
 ## Tasks Finished
 

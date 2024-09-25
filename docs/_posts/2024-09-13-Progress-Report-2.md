@@ -10,6 +10,14 @@ categories: progress-report
 
 **Date:** September 13, 2024
 
+### Developers
+
+| Name             | Role      | GitHub
+|------------------|-----------|--------
+| Batu Demirtas    | Developer | [batucs](https://github.com/batucs)
+| Christian Ramirez| Developer | [CRam-irez](https://github.com/CRam-irez)
+| Josh Lollis      | Developer | [TelloViz](https://github.com/TelloViz)
+
 ### Tasks Finished
 
 | Developer | Task(s) |
