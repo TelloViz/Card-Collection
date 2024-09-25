@@ -10,7 +10,7 @@ categories: progress-report
 
 **Date:** September 13, 2024
 
-### Developers
+### Team Members
 
 | Name             | Role      | GitHub
 |------------------|-----------|--------
