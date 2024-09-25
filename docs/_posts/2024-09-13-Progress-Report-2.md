@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Progress Report 2"
+date:   2024-09-13 12:00:00 -0700
+categories: progress-report
+---
 ## Team 8: Card Collection
 
 ![CURRENT PHASE: PLANNING](https://img.shields.io/badge/CURRENT%20PHASE-PLANNING-fe7d37)

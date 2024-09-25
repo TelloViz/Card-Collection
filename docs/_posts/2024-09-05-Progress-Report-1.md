@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "Progress Report 1"
+date:   2024-09-05 12:00:00 -0700
+categories: progress-report
+---
 # Team 8: Card Collection
 ![Static Badge](https://img.shields.io/badge/Current_Phase-Communication-red?style=for-the-badge)
 **Date:** September 5, 2024
