@@ -37,6 +37,9 @@ The project is developed as part of the CPSC 362 Software Engineering course.
 
 ![image](https://github.com/user-attachments/assets/3e3e0a3f-60e2-46e7-9412-5f890f5f1038)
 
+## Search Functionality Prototype
+
+![architecture](assets/prototypeDemo.gif)
 
 ## Preliminary GUI Mockup
 
