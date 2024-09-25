@@ -26,14 +26,14 @@ description: >-
   The project is developed as part of the CPSC 362 Software Engineering course.
 baseurl: "/Card-Collection" # This should match your repo name for the project site
 url: "https://telloviz.github.io" # Your GitHub Pages URL
-twitter_username: jekyllrb
+twitter_username:
 github_username:  TelloViz
 
 
 # Build settings
 theme: minima
 plugins:
-  - jekyll-feed
+#  - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default.
