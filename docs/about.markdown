@@ -11,11 +11,11 @@ The project is developed as part of the CPSC 362 Software Engineering course.
 
 ## Team Members
 
-| Name             | Role                          |
-|------------------|-------------------------------|
-| Batu Demirtas    | Developer                     |
-| Christian Ramirez| Developer                     |
-| Josh Lollis      | Developer                     |
+| Name             | Role      | GitHub
+|------------------|-----------|--------
+| Batu Demirtas    | Developer | [batucs](https://github.com/batucs)
+| Christian Ramirez| Developer | [CRam-irez](https://github.com/CRam-irez)
+| Josh Lollis      | Developer | [TelloViz](https://github.com/TelloViz)
 
 ## Technologies Used
 
