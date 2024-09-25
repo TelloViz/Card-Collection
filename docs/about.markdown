@@ -34,7 +34,7 @@ The project is developed as part of the CPSC 362 Software Engineering course.
 
 ## Proposed Architecture
 
-![cardCollectionArchitecture](https://github.com/TelloViz/Card-Collection/blob/main/Documentation/cardCollectionArchitecture.png)
+![cardCollectionArchitecture](/Documentation/cardCollectionArchitecture.png)
 
 
 ## Preliminary GUI Mockup
