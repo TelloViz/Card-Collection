@@ -21,3 +21,6 @@ class SearchHandler:
         Returns:
             list[Card]: A list of Card objects as search results.
         """
+        query = construct_query(tupleList)
+        
+        return queryApi(query)
