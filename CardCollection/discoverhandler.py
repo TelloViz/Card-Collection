@@ -1,47 +1,49 @@
 import random
 from collections import defaultdict
-
 from pokemontcgsdk import Card
 from backend import Backend
 from cardprocessor import CardProcessor
 
-
 class DiscoverHandler:
     """
     DiscoverHandler Class:
-    
+
     Summary:
-        The `DiscoverHandler` class provides methods to discover a 
-            single random card based on search criteria. 
-        The class uses `Backend.fetch_data` to retrieve data and 
-            `CardProcessor.process_cards` for data processing.
-        
+        The `DiscoverHandler` class provides methods to discover a
+        single random card based on search criteria.
+        The class uses `Backend.fetch_data` to retrieve data and
+        `CardProcessor.process_cards` for data processing.
+
     Methods:
         handle_discover:
             Returns a single card matching randomized criteria from a list of possible parameters.
-            
+            If no cards are found for the selected criteria, the function retries with new random
+            criteria until a valid card is found
+
         random_select_set:
             Randomly selects a set from the input list of sets.
-            
+
         random_select_type:
             Randomly selects a type from the input list of types.
     """
 
     def handle_discover(self, param_list: list[tuple[str, str, str]]) -> list[dict[str, str]]:
-        print([element for element in param_list if element[0] != 'set'])
+        # Initialize processed_cards to empty to enter the loop
+        processed_cards = []
 
-        randomSelect = DiscoverHandler.random_select(param_list)
+        while not processed_cards:
+            # Perform random selection of parameters
+            randomSelect = DiscoverHandler.random_select(param_list)
 
-        query = Backend.construct_query(self, randomSelect)
-        print("Query: " + query)
+            # Check if the selected type is available within the selected set
+            query = Backend.construct_query(self, randomSelect)
 
-        results = Backend.query_api(self, query)
+            # Run the query with the current random selection
+            results = Backend.query_api(self, query)
+            processed_cards = CardProcessor.process_cards(results)
 
-        processed_cards = CardProcessor.process_cards(results)
-
-        randomChoice = []
-        randomChoice.append(random.choice(processed_cards))
-
+        # Select a random card from the processed results
+        randomChoice = [random.choice(processed_cards)]
         return randomChoice
 
     def random_select(select_list: list[tuple[str, str, str]]) -> list[tuple[str, str, str]]:
