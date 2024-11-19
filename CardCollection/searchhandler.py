@@ -10,7 +10,7 @@ class SearchHandler:
         handle_search(search_parameters): Constructs a query string using the Backend class, construct_query function.
     """
 
-    def handle_search(self, search_parameters: list[tuple[str, str, str]]) -> list[dict[str, str]]:
+    def handle_search(self, search_parameters: list[tuple[str, str, str]], max_results: int = 100) -> list[dict[str, str]]:
         """
         A function that takes a list of tuples representing search parameters, constructs a query string using the Backend class, and retrieves a list of Card objects from the API.
 
@@ -28,8 +28,12 @@ class SearchHandler:
 
         query = Backend.construct_query(self, search_parameters)
         results = Backend.query_api(self, query)
-        return self.handle_card_process(results)
-    
+
+        # Limit results to max_results (100)
+        limited_results = results[:max_results]
+
+        return self.handle_card_process(limited_results)
+
     def handle_card_process(self, cards: list[Card]) -> list[dict[str, str]]:
         """
         A function that takes a list of tuples representing search parameters, constructs a query string using the Backend class, and retrieves a list of Card objects from the API.
@@ -41,6 +45,5 @@ class SearchHandler:
                 - key: card attribute defined by API
                 - value: card data string for that attribute
         """
-        
-        return CardProcessor.process_cards(cards)
 
+        return CardProcessor.process_cards(cards)
