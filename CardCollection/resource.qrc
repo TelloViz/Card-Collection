@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qtquickcontrols2.conf</file>
+        <file>ball.png</file>
+        <file>ballsmall.png</file>
+        <file>Card3D.qml</file>
+        <file>TypeBlock.qml</file>
+    </qresource>
+</RCC>

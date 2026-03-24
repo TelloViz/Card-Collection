@@ -1,6 +1,35 @@
 {
     "files": [
+        "backend.py",
+        "backendcontroller.py",
+        "inithandler.py",
+        "searchhandler.py",
+        "cardprocessor.py",
         "main.py",
-        "main.qml"
+        "main.qml",
+        "qtquickcontrols2.conf",
+        "requirements.txt",
+        "resource.qrc",
+        "ball.png",
+        "ballsmall.png",
+        "TypeBlock.qml",
+        "AttackInfoBlock.qml",
+        "AbilityInfoBlock.qml",
+        "MySearchFilterTools.qml",
+        "MySearchTools.qml",
+        "Card3D.qml",
+        "SetLogoBlock.qml",
+        "SetSymbolBlock.qml",
+        "SubtypeBlock.qml",
+        "Subtype.qml",
+        "FlavorTextBlock.qml",
+        "Type.qml",
+        "Discover.qml",
+        "topBall.png",
+        "bottomBall.png",
+        "Search.qml",
+        "discoverhandler.py",
+        "SettingsWindow.qml",
+        "Collection.qml"
     ]
 }

@@ -74,8 +74,9 @@ CMakeLists.txt.user*
 
 CardCollection.pyproject.user
 venv/
+withspaces.py
+rc_resource.py
 .tool-versions
 driver_main.py
-withspaces.py
 .qtcreator/
-rc_resource.py
+
